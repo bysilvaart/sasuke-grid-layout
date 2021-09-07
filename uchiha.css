@@ -24,10 +24,11 @@ body{
 
 .container{
     max-width: 660px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: var(--not-black);
     display: grid;
+    overflow: hidden;
 }
 
 .layer-01{
