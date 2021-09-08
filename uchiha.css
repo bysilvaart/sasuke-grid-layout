@@ -21,7 +21,6 @@ body{
     display: grid;
     place-content: center;
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
 }
 
 .container{
@@ -30,7 +29,8 @@ body{
     height: 100vh;
     background: var(--not-black);
     display: grid;
-    overflow: hidden;
+    position: relative;
+  
 }
 
 .layer-01{
@@ -58,7 +58,7 @@ body{
    width: 100%;
    height: 100vh;
    display: grid;
-   grid-template: repeat(6,15% )/ repeat(2,1fr);
+   grid-template: repeat(6, 15vh )/ repeat(2,1fr);
    gap: 20px;
    padding: 20px;
    grid-template-areas:
@@ -67,7 +67,7 @@ body{
    "square empty"
    "square empty"
    "square empty"
-   "circle sign";
+   "circle empty";
 
     position: relative;
     overflow: hidden;
@@ -91,8 +91,9 @@ body{
 }
 
 .my-sign{
-    grid-area: sign;
-    place-self: end right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 
 }
 
@@ -135,8 +136,7 @@ h2{
 
 .tittle{
     grid-area: tittle;
-    place-self: end center;
-    margin-bottom: 270px;
+    place-self: center;
 }
 
 h1{
